@@ -1,3 +1,236 @@
-<h1>
-  {{title}}
-</h1>
+<div class="container">
+  <div class="row">
+    <fly-tabset (select)="selecionouAba($event)"
+                [selectedIndex]="selectedIndex">
+      <fly-tab heading="Aba 1"
+               required="true">
+        <fly-legend iconClass="fa fa-trash" colspan="12" heading="Teste legenda">
+          <fly-tabset (select)="selecionouAba($event)">
+            <fly-tab heading="Aba 1"
+                     required="true">
+              <fly-legend iconClass="fa fa-trash"
+                          colspan="12"
+                          heading="Teste legenda">
+              </fly-legend>
+            </fly-tab>
+
+            <fly-tab heading="Aba 2"
+                     iconClass="fa fa-trash"
+                     (select)="selecionouAba2($event)">
+              dddddddddddddddddddddddddd
+            </fly-tab>
+
+            <fly-tab heading="Aba 3 lazylazylazy"
+                     iconClass="fa fa-trash"
+                     lazy="true">
+              <fly-input-text></fly-input-text>
+            </fly-tab>
+
+            <fly-tab heading="Aba 4"
+                     iconClass="fa fa-trash"
+                     disabled="true">
+              asdf asf asf
+            </fly-tab>
+
+            <fly-tab heading="asdf asf asf">
+              asdf asf asf
+            </fly-tab>
+            <fly-tab heading="asdf asf asf">
+              asdf asf asf
+            </fly-tab>
+            <fly-tab heading="asdf asf asf">
+              asdf asf asf
+            </fly-tab>
+            <fly-tab heading="asdf asf asf">
+              asdf asf asf
+            </fly-tab>
+            <fly-tab heading="asdf asf asf">
+              asdf asf asf
+            </fly-tab>
+            <fly-tab heading="asdf asf asf">
+              asdf asf asf
+            </fly-tab>
+            <fly-tab heading="asdf asf asf">
+              asdf asf asf
+            </fly-tab>
+            <fly-tab heading="asdf asf asf">
+              asdf asf asf
+            </fly-tab>
+            <fly-tab heading="asdf asf asf">
+              asdf asf asf
+            </fly-tab>
+            <fly-tab heading="asdf asf asf">
+              asdf asf asf
+            </fly-tab>
+            <fly-tab heading="asdf asf asf">
+              asdf asf asf
+            </fly-tab>
+          </fly-tabset>
+        </fly-legend>
+      </fly-tab>
+
+      <fly-tab heading="Aba 2"
+               iconClass="fa fa-trash"
+               (select)="selecionouAba2($event)">
+        dddddddddddddddddddddddddd
+      </fly-tab>
+
+      <fly-tab heading="Aba 3 lazylazylazy"
+               iconClass="fa fa-trash"
+               lazy="true">
+        <fly-input-text></fly-input-text>
+      </fly-tab>
+
+      <fly-tab heading="Aba 4"
+               iconClass="fa fa-trash"
+               disabled="true">
+        asdf asf asf
+      </fly-tab>
+
+      <fly-tab heading="asdf asf asf">
+        asdf asf asf
+      </fly-tab>
+      <fly-tab heading="asdf asf asf">
+        asdf asf asf
+      </fly-tab>
+      <fly-tab heading="asdf asf asf">
+        asdf asf asf
+      </fly-tab>
+      <fly-tab heading="asdf asf asf">
+        asdf asf asf
+      </fly-tab>
+      <fly-tab heading="asdf asf asf">
+        asdf asf asf
+      </fly-tab>
+      <fly-tab heading="asdf asf asf">
+        asdf asf asf
+      </fly-tab>
+      <fly-tab heading="asdf asf asf">
+        asdf asf asf
+      </fly-tab>
+      <fly-tab heading="asdf asf asf">
+        asdf asf asf
+      </fly-tab>
+      <fly-tab heading="asdf asf asf">
+        asdf asf asf
+      </fly-tab>
+      <fly-tab heading="asdf asf asf">
+        asdf asf asf
+      </fly-tab>
+      <fly-tab heading="asdf asf asf">
+        asdf asf asf
+      </fly-tab>
+    </fly-tabset>
+  </div>
+
+  selectedIndex COMPONENT {{selectedIndex}}
+  <button (click)="activeTab(1)">aba 1</button>
+  <button (click)="activeTab(2)">aba 2</button>
+  <button (click)="activeTab(0)">aba 0</button>
+  <button (click)="activeTab(10)">aba 10</button>
+
+  componente aba {{selectedIndex}}
+  <div class="row">
+    <fly-tabset type="pills">
+      <fly-tab heading="Aba 1 pills"
+               required="true"
+      >
+        <fly-legend iconClass="fa fa-trash" colspan="12" heading="Teste legenda">
+        </fly-legend>
+      </fly-tab>
+
+      <fly-tab heading="Aba 1"
+               required="true">
+      </fly-tab>
+
+      <fly-tab heading="Aba 1 desabilitada"
+               disabled="true">
+        <div class="row">
+        </div>
+      </fly-tab>
+    </fly-tabset>
+  </div>
+
+  <div class="row">
+    <fly-tabset vertical="true">
+      <fly-tab heading="Aba 1"
+               required="true">
+        <fly-legend iconClass="fa fa-trash"
+                    colspan="6"
+                    heading="Teste legenda">
+          <fly-tabset>
+            <fly-tab heading="Aba 1"
+                     required="true">
+              <fly-legend iconClass="fa fa-trash"
+                          colspan="6"
+                          heading="Teste legenda">
+              </fly-legend>
+              <fly-legend iconClass="fa fa-trash"
+                          colspan="6"
+                          heading="Teste legenda">
+              </fly-legend>
+              <fly-legend iconClass="fa fa-trash"
+                          colspan="6"
+                          heading="Teste legenda">
+              </fly-legend>
+              <fly-legend iconClass="fa fa-trash"
+                          colspan="6"
+                          heading="Teste legenda">
+              </fly-legend>
+              <fly-legend iconClass="fa fa-trash"
+                          colspan="6"
+                          heading="Teste legenda">
+              </fly-legend>
+            </fly-tab>
+
+            <fly-tab heading="Aba 1 desabilitada">
+              <div class="row">
+              </div>
+            </fly-tab>
+          </fly-tabset>
+        </fly-legend>
+        <fly-legend iconClass="fa fa-trash"
+                    colspan="6"
+                    heading="Teste legenda">
+        </fly-legend>
+        <fly-legend iconClass="fa fa-trash"
+                    colspan="6"
+                    heading="Teste legenda">
+        </fly-legend>
+        <fly-legend iconClass="fa fa-trash"
+                    colspan="6"
+                    heading="Teste legenda">
+        </fly-legend>
+        <fly-legend iconClass="fa fa-trash"
+                    colspan="6"
+                    heading="Teste legenda">
+        </fly-legend>
+      </fly-tab>
+
+      <fly-tab heading="Aba 1 desabilitada"
+               disabled="true">
+        <div class="row">
+        </div>
+      </fly-tab>
+    </fly-tabset>
+  </div>
+  <hr>
+
+  {{title | flyCpfPipe}}
+
+
+  <div class="row">
+    <fly-legend iconClass="fa fa-cog" heading="Teste legenda">
+    </fly-legend>
+  </div>
+
+
+  <div class="row">
+    <fly-hr title="Teste"></fly-hr>
+  </div>
+
+  <div class="row">
+    <fly-hr iconClass="fa fa-edit" colspan="6" heading="Teste"></fly-hr>
+    <fly-hr colspan="6" heading="asdf asdf asdf "></fly-hr>
+  </div>
+</div>

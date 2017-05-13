@@ -1,6 +1,6 @@
 import { Ng4Page } from './app.po';
 
-describe('ng4 App', () => {
+describe('ngflydemo App', () => {
   let page: Ng4Page;
 
   beforeEach(() => {
