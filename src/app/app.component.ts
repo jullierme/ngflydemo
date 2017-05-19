@@ -1,12 +1,13 @@
-import { Component } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
+export class AppComponent implements OnInit{
   selectedIndex:number;
+  selectedIndexTeste2:number;
 
   title = 'app works!';
 
@@ -20,5 +21,9 @@ export class AppComponent {
 
   activeTab(index) {
     this.selectedIndex = index;
+  }
+
+  ngOnInit(){
+    this.selectedIndexTeste2 = 1;
   }
 }
