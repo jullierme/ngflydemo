@@ -5,9 +5,9 @@ import {Component, OnInit} from '@angular/core';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent implements OnInit{
-  selectedIndex:number;
-  selectedIndexTeste2:number;
+export class AppComponent implements OnInit {
+  selectedIndex: number;
+  selectedIndexTeste2: number;
 
   title = 'app works!';
 
@@ -23,7 +23,7 @@ export class AppComponent implements OnInit{
     this.selectedIndex = index;
   }
 
-  ngOnInit(){
+  ngOnInit() {
     this.selectedIndexTeste2 = 1;
   }
 }
