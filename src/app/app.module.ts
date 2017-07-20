@@ -8,12 +8,14 @@ import {NgFlyModule} from '../../node_modules/ngfly/src';
 import {AppComponent} from './app.component';
 import {TabsModule} from 'ngx-bootstrap';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 @NgModule({
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
+    BrowserAnimationsModule,
     NgFlyModule.forRoot(),
     TabsModule.forRoot(),
     NgbModule.forRoot()

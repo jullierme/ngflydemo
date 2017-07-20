@@ -11,6 +11,11 @@ export class AppComponent implements OnInit {
 
   title = 'app works!';
 
+  input1: string;
+  input2: string;
+  input3: string;
+  input4: string;
+
   selecionouAba2(tab) {
     console.log(tab.heading);
   }
@@ -25,5 +30,9 @@ export class AppComponent implements OnInit {
 
   ngOnInit() {
     this.selectedIndexTeste2 = 1;
+  }
+
+  imAlert(str) {
+    console.log(str + new Date());
   }
 }

@@ -87,6 +87,64 @@
   </div>
 
   <div class="row">
+    <fly-input-text
+      label="Teste"
+      required="true"
+      colspan="3"
+      [(ngModel)]="input5"
+      (change)="imAlert('testeChange')"
+      type="ip">
+    </fly-input-text>
+    <fly-input-text
+      label="Teste"
+      required="true"
+      colspan="3"
+      [(ngModel)]="input6"
+      (focus)="imAlert('focus')"> <!--change in blur change-->
+    </fly-input-text>
+  </div>
+  <div class="row">
+    <fly-input-text
+      label="Teste"
+      required="true"
+      colspan="3"
+      [(ngModel)]="input1"
+      (ngModelChange)="imAlert('testeChange')">
+    </fly-input-text>
+
+    <fly-input-text
+      label="Teste2"
+      colspan="3"
+      requiredConditional="true"
+      [(ngModel)]="input2"
+      (keydown)="imAlert('testedown')">
+    </fly-input-text>
+
+    <fly-input-text
+      label="Teste3"
+      colspan="3"
+      [(ngModel)]="input3"
+      placeholder="Teste place holder"
+      maxlength="10"
+      minlength="2"
+      (blur)="imAlert('testeBlur')"
+    >
+    </fly-input-text>
+
+    <fly-input-text
+      label="Teste4"
+      colspan="3"
+      [(ngModel)]="input4"
+      placeholder="Teste place holder"
+      (keyup)="imAlert('testeup')">
+    </fly-input-text>
+  </div>
+
+  input1:{{input1}}
+  input2:{{input2}}
+  input3:{{input3}}
+  input4:{{input4}}
+  <div class="row">
     <fly-tabset vertical="true">
       <fly-tab heading="Aba 1"
                required="true">
