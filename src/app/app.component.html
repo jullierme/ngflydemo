@@ -88,7 +88,7 @@
 
   <div class="row">
     <fly-input-text
-      label="Teste"
+      label="Teste maskValue=99/99/9999"
       required="true"
       colspan="3"
       [(ngModel)]="input5"
@@ -96,11 +96,12 @@
       maskValue="99/99/9999">
     </fly-input-text>
     <fly-input-text
-      label="Teste"
+      label="Teste type=integer"
       required="true"
       colspan="3"
       [(ngModel)]="input6"
-      (focus)="imAlert('focus')"> <!--change in blur change-->
+      (focus)="imAlert('focus')"
+      type="integer"> <!--change in blur change-->
     </fly-input-text>
   </div>
   <div class="row">
@@ -228,4 +229,25 @@
     <fly-hr iconClass="fa fa-edit" colspan="6" heading="Teste"></fly-hr>
     <fly-hr colspan="6" heading="asdf asdf asdf "></fly-hr>
   </div>
+
+  <div>
+    <md-toolbar color="primary">
+      <span>Yay, Material in Angular 2!</span>
+    </md-toolbar>
+
+    <md-card>
+      <button md-button>All</button>
+      <button md-raised-button>Of</button>
+      <button md-raised-button color="primary">The</button>
+      <button md-raised-button color="accent">Buttons</button>
+    </md-card>
+
+    <span class="done">
+    <button md-fab>
+      <md-icon>check circle</md-icon>
+    </button>
+
+  </span>
+  </div>
+  And
 </div>

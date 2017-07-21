@@ -1,4 +1,5 @@
 import {Component, OnInit} from '@angular/core';
+import {FlyAlertService} from '../../node_modules/ngfly/src/lib/components/fly-alert/fly-alert.service';
 
 @Component({
   selector: 'app-root',
@@ -15,6 +16,9 @@ export class AppComponent implements OnInit {
   input2: string;
   input3: string;
   input4: string;
+
+  constructor(private flyAlertService: FlyAlertService) {
+  }
 
   selecionouAba2(tab) {
     console.log(tab.heading);
@@ -33,6 +37,7 @@ export class AppComponent implements OnInit {
   }
 
   imAlert(str) {
+    this.flyAlertService.showOk(str + new Date(), 'title');
     console.log(str + new Date());
   }
 }
