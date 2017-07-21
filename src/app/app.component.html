@@ -93,7 +93,7 @@
       colspan="3"
       [(ngModel)]="input5"
       (change)="imAlert('testeChange')"
-      type="ip">
+      maskValue="99/99/9999">
     </fly-input-text>
     <fly-input-text
       label="Teste"
@@ -144,6 +144,8 @@
   input2:{{input2}}
   input3:{{input3}}
   input4:{{input4}}
+  input5:{{input5}}
+  input6:{{input6}}
   <div class="row">
     <fly-tabset vertical="true">
       <fly-tab heading="Aba 1"
